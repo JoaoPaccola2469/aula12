@@ -1,0 +1,327 @@
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    height: 14%;
+}
+.Logo{
+    padding-left: 2%;
+    width: 50%;
+    height: 120%;
+    padding-right: 2%;
+}
+.direitaHeader{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.esquerdaHeader{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.p1{
+    font-size: 20px;
+}
+nav{
+    padding: 5px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 10%;
+}
+.buscar{
+    background-color: rgb(222, 222, 222);
+    border-radius: 15px;
+    font-size: 20px;
+    height: 35%;
+}
+.SearchIcon{
+    position: relative;
+    right: 5%;
+    height: 12%;
+    width: 5%;
+}
+.Logo2{
+    width: 20%;
+    height: 100%;
+}
+.Logo3{
+    width: 16%;
+    height: 70%;
+}
+.Logo2:hover,
+.Logo3:hover,
+.login:hover {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(90%) saturate(5000%) hue-rotate(330deg);
+    cursor: pointer;
+}
+.login{
+    position: relative;
+    left: 43%;
+}
+.loginImg{
+    width: 15%;
+}
+.p1:hover {
+    color: red;
+    cursor: pointer;
+}
+.navegador{
+    color: black;
+    text-decoration: none;
+    padding-bottom:10px ;
+    padding-top: 10px;
+}
+.carrossel{
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slides img{
+    width: 100%;
+    object-fit: cover;
+}
+.slides{
+    display: flex;
+    width: 400%;
+    animation: slide 16s infinite;
+}
+@keyframes slide {
+      0%, 20%   { transform: translateX(0); }
+      25%, 45%  { transform: translateX(-25%); }
+      50%, 70%  { transform: translateX(-50%); }
+      75%, 95%  { transform: translateX(-75%); }
+      100%      { transform: translateX(0); }
+}
+.ofertas{
+    display: flex;
+    flex-direction: column;
+}
+.tituloOferta{
+    font-size: 30px;
+    padding-left: 3%;
+}
+.produtosOF{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Bodoni MT';
+}
+.produto1:hover{
+    box-shadow: 2px 2px 10px;
+    transition: 0.3s;
+}
+.produto2:hover{
+    box-shadow: 2px 2px 10px;
+    transition: 0.3s;
+}
+.produto3:hover{
+    box-shadow: 2px 2px 10px;
+    transition: 0.3s;
+}
+.produto4:hover{
+    box-shadow: 2px 2px 10px;
+    transition: 0.3s;
+}
+.produtosOF img{
+    width: 200px;
+}
+.tituloProduto{
+    font-size: 35px;
+}
+.produto1{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    max-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.produto2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    max-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.produto3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    max-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.produto4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    max-height: 580px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.descricaoProduto{
+    margin: 0;
+    font-size: 20px;
+}
+.preco{
+    margin: 0;
+    font-size: 30px;
+}
+.promocao{
+    margin: 0;
+    font-size: 25px;
+    text-decoration: line-through;
+    color: gray;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+.cadastroNewsletter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.cadastroNewsletterP{
+    margin: 0;
+    font-size: 45px;
+    font-family: 'Bodoni MT';
+    color: white;
+}
+.cadastroNewsletterP2{
+    font-size: 25px;
+    font-family: 'Bodoni MT';
+    color: white;
+    margin: 0;
+}
+#nomeNewsletter{
+    border-radius: 50px;
+    font-size: 25px;
+    border: none;
+}
+#emailNewsletter{
+    border: none;
+    font-size: 25px;
+    border-radius: 50px;
+    margin-left: 25px;
+}
+form{
+    padding: 20px;
+    border-radius: 50%;
+}
+form ::placeholder{
+    padding-left: 10px;
+}
+#botaoNewsletter{
+    margin-left: 50px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid white;
+
+}
+#botaoNewsletter:hover{
+    transition: 0.3s;
+    background-color: rgb(56, 56, 56);
+}
+.direitosAutorais{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.direitosAutoraisP{
+    font-size: 15px;
+    color: white;
+}
+.atendimentoAoCliente{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+}
+.tituloAtendimento{
+    padding-left: 10px;
+    color: white;
+    font-size: 25px;
+}
+.textoAtendimento{
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+}
+.overlay {
+  position: absolute;
+  bottom: -100%; /* começa fora da imagem */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  transition: bottom 0.3s ease;
+}
+.imagem-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  justify-content: center;
+}
+.imagem-container img {
+  transition: transform 0.3s ease;
+}
+.imagem-container:hover .overlay {
+  bottom: 0;
+}
+.imagem-container:hover img {
+  transform: scale(1.05);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.dropdownNav{
+    display: none;
+    z-index: 1;
+    background-color: rgb(230, 230, 230);
+    position: absolute;
+}
+nav button{
+    border: 0;
+    font-size: 15px;
+}
+nav button:hover .dropdownNav{
+    display: block;
+}
+button{
+    cursor: pointer;
+}
